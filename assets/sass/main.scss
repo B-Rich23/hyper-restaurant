@@ -1,10 +1,15 @@
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+// font-family: 'PT Sans', sans-serif;
+$textFont: 'Open Sans Condensed', sans-serif;
+$displayFont: 'Rozha One', serif;
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|PT+Sans:400,700|Rozha+One');
 @import "reset";
 @import "Header";
 @import "TopImg";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $textFont;
   // background: purple;
 }
 

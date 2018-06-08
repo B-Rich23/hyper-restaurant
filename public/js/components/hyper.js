@@ -181,7 +181,7 @@ function TopImg(_ref) {
       { className: "contact-info" },
       (0, _hyperapp.h)(
         "div",
-        null,
+        { className: "booking" },
         "Book a Table Directly:"
       ),
       (0, _hyperapp.h)(

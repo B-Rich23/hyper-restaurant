@@ -1,6 +1,6 @@
 .TopImg {
   background: black;
-  height: 675px;
+  height: 500px;
   color: #fff;
   position: relative;
     background: linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 100%);
@@ -8,16 +8,44 @@
     background-position: center;
     background-size: cover;
 
-    h1 {
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 4rem;
+    .title {
+      padding: 200px 50px 20px;
+      text-align: right;
+
+      h1 {
+        font-family: $displayFont;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 4rem;
+      }
+
+      h5 {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 300;
+      }
+
     }
+    .contact-info {
+      text-align: right;
+      // position: absolute;
+      // bottom: 0;
+      // right: 0;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+      padding: 20px 50px 20px;
 
+      .booking {
+        margin-bottom: 10px;
+      }
+      strong {
+        font-weight: bold;
+      }
 
-    h5 {
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 300;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 20px
+      }
     }
 }
