@@ -44,6 +44,10 @@ var _Header = __webpack_require__(4);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _TopImg = __webpack_require__(5);
+
+var _TopImg2 = _interopRequireDefault(_TopImg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App(_ref) {
@@ -53,7 +57,8 @@ function App(_ref) {
   return (0, _hyperapp.h)(
     'div',
     { 'class': 'app' },
-    (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -143,6 +148,69 @@ function Header(_ref) {
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = TopImg;
+
+var _hyperapp = __webpack_require__(0);
+
+function TopImg(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    null,
+    (0, _hyperapp.h)(
+      "h5",
+      null,
+      "Welcome!"
+    ),
+    (0, _hyperapp.h)(
+      "h1",
+      null,
+      "Prime Beef Steak Restaurant"
+    ),
+    (0, _hyperapp.h)(
+      "div",
+      { className: "contact-info" },
+      (0, _hyperapp.h)(
+        "div",
+        null,
+        "Book a Table Directly:"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        "415-444-5555"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { className: "hours" },
+        "Opening Hours ",
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          "Mon - Fri: 12pm - 10pm"
+        ),
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          "Weekends: 11pm - 11pm"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _hyperapp = __webpack_require__(0);
 
 var _actions = __webpack_require__(1);
@@ -179,4 +247,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[5]);
+],[6]);
