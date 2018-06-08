@@ -1,10 +1,9 @@
-// font-family: 'PT Sans', sans-serif;
-$textFont: 'Open Sans Condensed', sans-serif;
-$displayFont: 'Rozha One', serif;
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|PT+Sans:400,700|Rozha+One');
+@import "variables";
 @import "reset";
+@import "grid";
 @import "Header";
 @import "TopImg";
 
