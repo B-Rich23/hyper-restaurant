@@ -161,11 +161,11 @@ function TopImg(_ref) {
 
   return (0, _hyperapp.h)(
     "section",
-    null,
+    { className: "TopImg" },
     (0, _hyperapp.h)(
       "h5",
       null,
-      "Welcome!"
+      "Welcome"
     ),
     (0, _hyperapp.h)(
       "h1",

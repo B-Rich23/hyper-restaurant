@@ -1,0 +1,22 @@
+Header {
+  background: rgba(134, 135, 136, 0.755);
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+
+  .logo {
+    display: inline-block;
+    float: left;
+  }
+
+  nav {
+    display: inline-block;
+    // float: right;
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding-left: 10px;
+    }
+
+  }
+}

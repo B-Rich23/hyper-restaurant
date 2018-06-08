@@ -1,4 +1,4 @@
-import {h, app} from 'hyperapp'
+import { h, app } from 'hyperapp'
 import Header from './Header.js'
 import TopImg from './TopImg.js'
 

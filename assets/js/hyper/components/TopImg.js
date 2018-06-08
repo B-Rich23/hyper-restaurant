@@ -1,10 +1,10 @@
-import {h, app} from 'hyperapp'
+import { h, app } from 'hyperapp'
 
 export default function TopImg({state, actions}) {
   return (
-    <section>
+    <section className="TopImg">
       <h5>
-      Welcome!
+      Welcome
       </h5>
       <h1>
       Prime Beef Steak Restaurant
