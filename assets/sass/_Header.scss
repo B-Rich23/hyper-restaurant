@@ -1,21 +1,30 @@
-Header {
-  background: rgba(134, 135, 136, 0.755);
+header {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
   color: #fff;
+  padding: 20px ;
+  text-align: right;
+  width: 100%;
   padding: 20px 10px;
-  text-align: center;
+  z-index: 10;
 
   .logo {
     display: inline-block;
+    padding-left: 10px;
     float: left;
   }
 
   nav {
     display: inline-block;
-    // float: right;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+
     a {
+      display: inline-block;
       text-decoration: none;
       color: #fff;
-      padding-left: 10px;
+      padding: 0 10px;
     }
 
   }

@@ -163,14 +163,18 @@ function TopImg(_ref) {
     "section",
     { className: "TopImg" },
     (0, _hyperapp.h)(
-      "h5",
-      null,
-      "Welcome"
-    ),
-    (0, _hyperapp.h)(
-      "h1",
-      null,
-      "Prime Beef Steak Restaurant"
+      "div",
+      { className: "title" },
+      (0, _hyperapp.h)(
+        "h5",
+        null,
+        "Welcome"
+      ),
+      (0, _hyperapp.h)(
+        "h1",
+        null,
+        "Prime Beef Steak Restaurant"
+      )
     ),
     (0, _hyperapp.h)(
       "div",

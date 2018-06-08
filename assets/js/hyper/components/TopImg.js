@@ -3,12 +3,14 @@ import { h, app } from 'hyperapp'
 export default function TopImg({state, actions}) {
   return (
     <section className="TopImg">
-      <h5>
-      Welcome
-      </h5>
-      <h1>
-      Prime Beef Steak Restaurant
-      </h1>
+      <div className="title">
+        <h5>
+        Welcome
+        </h5>
+        <h1>
+        Prime Beef Steak Restaurant
+        </h1>
+      </div>
       <div className="contact-info">
         <div>Book a Table Directly:</div>
         <h2>415-444-5555</h2>
