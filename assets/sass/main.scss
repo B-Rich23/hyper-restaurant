@@ -1,11 +1,11 @@
 
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|PT+Sans:400,700|Rozha+One');
-@import "variables";
 @import "reset";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans:400,700|Rozha+One');
+@import "variables";
 @import "grid";
 @import "Header";
 @import "TopImg";
+@import "OurStory";
 
 body {
   font-family: $textFont;

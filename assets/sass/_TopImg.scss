@@ -1,4 +1,4 @@
-.TopImg {
+#TopImg {
   background: black;
   height: 500px;
   color: #fff;
@@ -9,7 +9,7 @@
     background-size: cover;
 
     .title {
-      padding: 200px 50px 20px;
+      padding: 200px 30px 20px;
       text-align: right;
 
       h1 {
@@ -34,7 +34,7 @@
       font-size: 1rem;
       line-height: 1.5rem;
       margin-bottom: 20px;
-      padding: 20px 50px 20px;
+      padding: 20px 30px 20px;
 
       .booking {
         margin-bottom: 10px;
