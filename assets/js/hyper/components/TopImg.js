@@ -9,15 +9,15 @@ export default function TopImg({state, actions}) {
           Welcome
           </h5>
           <h1>
-          Prime Beef Steak Restaurant
+          Prime Beef Steak <br />Restaurant
           </h1>
         </div>
         <div className="contact-info">
           <div className="booking">Book a Table Directly:</div>
-          <h2>415-444-5555</h2>
+          <h2>925-444-5555</h2>
           <div className="hours">
           Opening Hours <strong>Mon - Fri: 12pm - 10pm</strong>
-          <strong>Weekends: 11pm - 11pm</strong>
+          <strong> Weekends: 11pm - 11pm</strong>
           </div>
         </div>
       </div>

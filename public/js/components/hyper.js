@@ -246,7 +246,7 @@ function SpecialMenu(_ref) {
 
     return (0, _hyperapp.h)(
         "section",
-        { id: "SpecialMenu" },
+        { id: "SpecialMenu", className: "textureBG" },
         (0, _hyperapp.h)(
             "div",
             { className: "container" },
@@ -389,7 +389,9 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h1",
           null,
-          "Prime Beef Steak Restaurant"
+          "Prime Beef Steak ",
+          (0, _hyperapp.h)("br", null),
+          "Restaurant"
         )
       ),
       (0, _hyperapp.h)(
@@ -403,7 +405,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h2",
           null,
-          "415-444-5555"
+          "925-444-5555"
         ),
         (0, _hyperapp.h)(
           "div",
@@ -417,7 +419,7 @@ function TopImg(_ref) {
           (0, _hyperapp.h)(
             "strong",
             null,
-            "Weekends: 11pm - 11pm"
+            " Weekends: 11pm - 11pm"
           )
         )
       )

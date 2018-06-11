@@ -2,7 +2,7 @@ import { h, app } from 'hyperapp'
 
 export default function SpecialMenu({state, actions}) {
   return (
-    <section id="SpecialMenu">
+    <section id="SpecialMenu" className="textureBG">
       <div className="container">
         <h5 className="comp-title">Special Menu</h5>
         <h2>A Taste Of Autumn</h2>
