@@ -1,0 +1,35 @@
+#RandomQuotes {
+    background: black;
+    padding: 150px;
+    color: #fff;
+    position: relative;
+    background: linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 100%);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+    // -webkit-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
+    // -moz-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
+    // box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
+
+    h1 {
+        color: #fff;
+        font-family: $displayFont;
+        font-size: 3rem;
+        display: inline-flex;
+        text-align: center;
+        // padding-bottom: 50px;
+        max-width: 600px;
+        margin: 0 auto 50px;
+        line-height: 1.2;
+    }
+
+    .author  {
+        color: #fff;
+        // font-family: $displayFont;
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+    }
+}

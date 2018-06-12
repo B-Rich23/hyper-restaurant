@@ -17,7 +17,7 @@ export default function TopImg({state, actions}) {
           <h2>925-444-5555</h2>
           <div className="hours">
           Opening Hours <strong>Mon - Fri: 12pm - 10pm</strong>
-          <strong> Weekends: 11pm - 11pm</strong>
+          <strong> Weekends: 11am - 11pm</strong>
           </div>
         </div>
       </div>

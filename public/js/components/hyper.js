@@ -40,21 +40,33 @@ exports.default = App;
 
 var _hyperapp = __webpack_require__(0);
 
-var _Header = __webpack_require__(4);
+var _Header = __webpack_require__(5);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(7);
+var _TopImg = __webpack_require__(10);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
-var _OurStory = __webpack_require__(5);
+var _OurStory = __webpack_require__(6);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(6);
+var _SpecialMenu = __webpack_require__(9);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
+
+var _RandomQuotes = __webpack_require__(7);
+
+var _RandomQuotes2 = _interopRequireDefault(_RandomQuotes);
+
+var _Reviews = __webpack_require__(8);
+
+var _Reviews2 = _interopRequireDefault(_Reviews);
+
+var _ContactUs = __webpack_require__(4);
+
+var _ContactUs2 = _interopRequireDefault(_ContactUs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68,7 +80,10 @@ function App(_ref) {
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_RandomQuotes2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -90,6 +105,35 @@ var globalState = exports.globalState = {
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ContactUs;
+
+var _hyperapp = __webpack_require__(0);
+
+function ContactUs(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "ContactUs", className: "textureBG" },
+    (0, _hyperapp.h)(
+      "div",
+      { className: "container" },
+      "Contact!"
+    )
+  );
+}
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -156,7 +200,7 @@ function Header(_ref) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -227,7 +271,116 @@ function OurStory(_ref) {
 }
 
 /***/ }),
-/* 6 */
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = RandomQuotes;
+
+var _hyperapp = __webpack_require__(0);
+
+function RandomQuotes(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    'section',
+    { id: 'RandomQuotes', style: { backgroundImage: 'linear-gradient(120deg,rgba(0,0,0,.0) 0,#000 200%),url(../img/spices.jpg)' } },
+    (0, _hyperapp.h)(
+      'div',
+      { className: 'container' },
+      (0, _hyperapp.h)(
+        'h1',
+        null,
+        '"For me, cooking is an extension of love."'
+      ),
+      (0, _hyperapp.h)(
+        'span',
+        { className: 'author' },
+        ' - Hedda Sterne'
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Reviews;
+
+var _hyperapp = __webpack_require__(0);
+
+function Reviews(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "Reviews" },
+    (0, _hyperapp.h)(
+      "div",
+      { className: "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { className: "row" },
+        (0, _hyperapp.h)(
+          "div",
+          { className: "col-md-6" },
+          (0, _hyperapp.h)(
+            "h5",
+            { className: "comp-title" },
+            "Our Story"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "Cooking is the art of adjustment"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            null,
+            "Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh."
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { className: "quote" },
+            "\"Hands down the best steaks in Walnut Creek!\" - ",
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Sean Dorsey"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "a",
+            { href: "#", className: "reserve-btn" },
+            "Reserve"
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { className: "col-md-6" },
+          (0, _hyperapp.h)("div", { className: "video-img" })
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -355,7 +508,7 @@ function SpecialMenu(_ref) {
 }
 
 /***/ }),
-/* 7 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -419,7 +572,7 @@ function TopImg(_ref) {
           (0, _hyperapp.h)(
             "strong",
             null,
-            " Weekends: 11pm - 11pm"
+            " Weekends: 11am - 11pm"
           )
         )
       )
@@ -428,7 +581,7 @@ function TopImg(_ref) {
 }
 
 /***/ }),
-/* 8 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -470,4 +623,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[8]);
+],[11]);
