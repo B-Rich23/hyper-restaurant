@@ -337,16 +337,30 @@ function Reviews(_ref) {
         { className: "row" },
         (0, _hyperapp.h)(
           "div",
-          { className: "col-md-6" },
+          { className: "col-md-8" },
+          (0, _hyperapp.h)(
+            "div",
+            { className: "chef-img" },
+            (0, _hyperapp.h)("img", { src: "../img/chef.jpg" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { className: "col-md-4" },
           (0, _hyperapp.h)(
             "h5",
             { className: "comp-title" },
-            "Our Story"
+            "Reviews"
           ),
           (0, _hyperapp.h)(
             "h2",
             null,
-            "Cooking is the art of adjustment"
+            "Chef Masters"
+          ),
+          (0, _hyperapp.h)(
+            "h4",
+            null,
+            "A breathtaking steakhouse experience!"
           ),
           (0, _hyperapp.h)(
             "p",
@@ -355,24 +369,17 @@ function Reviews(_ref) {
           ),
           (0, _hyperapp.h)(
             "div",
-            { className: "quote" },
-            "\"Hands down the best steaks in Walnut Creek!\" - ",
+            { className: "author" },
             (0, _hyperapp.h)(
               "strong",
               null,
-              "Sean Dorsey"
-            )
+              "Rich Belini"
+            ),
+            " - winner of Chef Masters"
           ),
-          (0, _hyperapp.h)(
-            "a",
-            { href: "#", className: "reserve-btn" },
-            "Reserve"
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { className: "col-md-6" },
-          (0, _hyperapp.h)("div", { className: "video-img" })
+          (0, _hyperapp.h)("div", { className: "arrows" }),
+          (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left" }),
+          (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right" })
         )
       )
     )
