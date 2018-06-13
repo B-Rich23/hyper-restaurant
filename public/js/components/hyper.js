@@ -378,8 +378,8 @@ function Reviews(_ref) {
             " - winner of Chef Masters"
           ),
           (0, _hyperapp.h)("div", { className: "arrows" }),
-          (0, _hyperapp.h)("i", { "class": "fas fa-arrow-left" }),
-          (0, _hyperapp.h)("i", { "class": "fas fa-arrow-right" })
+          (0, _hyperapp.h)("i", { className: "fas fa-arrow-left" }),
+          (0, _hyperapp.h)("i", { className: "fas fa-arrow-right ready" })
         )
       )
     )

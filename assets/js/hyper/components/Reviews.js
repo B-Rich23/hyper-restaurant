@@ -19,8 +19,8 @@ export default function Reviews({state, actions}) {
             </p>
             <div className="author"><strong>Rich Belini</strong> - winner of Chef Masters</div>
             <div className="arrows"></div>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-right"></i>
+            <i className="fas fa-arrow-left"></i>
+            <i className="fas fa-arrow-right ready"></i>
 
           </div>
         </div>
