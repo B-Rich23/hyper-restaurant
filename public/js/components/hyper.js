@@ -40,33 +40,37 @@ exports.default = App;
 
 var _hyperapp = __webpack_require__(0);
 
-var _Header = __webpack_require__(5);
+var _Header = __webpack_require__(6);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(10);
+var _TopImg = __webpack_require__(11);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
-var _OurStory = __webpack_require__(6);
+var _OurStory = __webpack_require__(7);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(9);
+var _SpecialMenu = __webpack_require__(10);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
 
-var _RandomQuotes = __webpack_require__(7);
+var _RandomQuotes = __webpack_require__(8);
 
 var _RandomQuotes2 = _interopRequireDefault(_RandomQuotes);
 
-var _Reviews = __webpack_require__(8);
+var _Reviews = __webpack_require__(9);
 
 var _Reviews2 = _interopRequireDefault(_Reviews);
 
 var _ContactUs = __webpack_require__(4);
 
 var _ContactUs2 = _interopRequireDefault(_ContactUs);
+
+var _Footer = __webpack_require__(5);
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -83,7 +87,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_RandomQuotes2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Footer2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -222,6 +227,68 @@ function ContactUs(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = Footer;
+
+var _hyperapp = __webpack_require__(0);
+
+function Footer(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "footer",
+    { id: "Footer" },
+    (0, _hyperapp.h)(
+      "div",
+      { className: "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { className: "logo" },
+        (0, _hyperapp.h)("i", { "class": "fab fa-pinterest-p" })
+      ),
+      (0, _hyperapp.h)(
+        "nav",
+        { className: "menu" },
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Our Story"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Special Menu"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reviews"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Contact Us"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Our Story"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = Header;
 
 var _hyperapp = __webpack_require__(0);
@@ -239,16 +306,15 @@ function Header(_ref) {
       (0, _hyperapp.h)(
         "div",
         { className: "logo" },
-        "Logo"
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          (0, _hyperapp.h)("i", { "class": "fab fa-pinterest-p" })
+        )
       ),
       (0, _hyperapp.h)(
         "nav",
         null,
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#" },
-          "Home"
-        ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
@@ -257,17 +323,22 @@ function Header(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Party Platters"
+          "Our Story"
         ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Locations"
+          "Special Menu"
         ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Rewards"
+          "Reviews"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Contact Us"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -280,7 +351,7 @@ function Header(_ref) {
 }
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -351,7 +422,7 @@ function OurStory(_ref) {
 }
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -389,7 +460,7 @@ function RandomQuotes(_ref) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -467,7 +538,7 @@ function Reviews(_ref) {
 }
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -595,7 +666,7 @@ function SpecialMenu(_ref) {
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -668,7 +739,7 @@ function TopImg(_ref) {
 }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -710,4 +781,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[11]);
+],[12]);

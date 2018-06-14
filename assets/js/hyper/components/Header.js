@@ -5,14 +5,14 @@ export default function Header({state, actions}) {
     <header>
       <div className="container">
         <div className="logo">
-          Logo
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
         </div>
         <nav>
-          <a href="#">Home</a>
           <a href="#">Menu</a>
-          <a href="#">Party Platters</a>
-          <a href="#">Locations</a>
-          <a href="#">Rewards</a>
+          <a href="#">Our Story</a>
+          <a href="#">Special Menu</a>
+          <a href="#">Reviews</a>
+          <a href="#">Contact Us</a>
           <a href="#">Reservations</a>
         </nav>
       </div>

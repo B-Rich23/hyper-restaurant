@@ -1,0 +1,31 @@
+#Footer {
+    height: 400px;
+    padding: 100px 0;
+    background: $footerBG;
+
+    .logo {
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    nav {
+        // display: inline-block;
+        text-align: center;
+        padding-right: 10px;
+
+        a {
+        //   display: inline-block;
+          text-decoration: none;
+          color: #fff;
+          border-left: 1px solid grey;
+          padding: 0 10px;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            color: $red;
+          }
+        }
+    }
+}
