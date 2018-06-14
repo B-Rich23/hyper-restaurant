@@ -127,7 +127,87 @@ function ContactUs(_ref) {
     (0, _hyperapp.h)(
       "div",
       { className: "container" },
-      "Contact!"
+      (0, _hyperapp.h)(
+        "div",
+        { className: "box" },
+        (0, _hyperapp.h)(
+          "h5",
+          { className: "comp-title" },
+          "Contact Us"
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { className: "row" },
+          (0, _hyperapp.h)(
+            "div",
+            { className: "col-md-6" },
+            (0, _hyperapp.h)(
+              "div",
+              { className: "title" },
+              "Walnut Creek, CA"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              { className: "address" },
+              "12345 South Broadway",
+              (0, _hyperapp.h)("br", null),
+              "Walnut Creek, CA 94596"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              (0, _hyperapp.h)(
+                "strong",
+                null,
+                "Email: "
+              ),
+              (0, _hyperapp.h)(
+                "a",
+                { href: "mailTo:info@primebeefsteak.com" },
+                "info@primebeefsteak.com"
+              )
+            )
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { className: "col-md-6" },
+            (0, _hyperapp.h)(
+              "h6",
+              { className: "address" },
+              "Phone:"
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { className: "title" },
+              "925-444-5555"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              { className: "mealTime" },
+              "                  Lunch Services:"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              "Monday - Friday 12pm - 1:30pm",
+              (0, _hyperapp.h)("br", null),
+              "Saturday & Sunday from 11am - 1:30pm"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              { className: "mealTime" },
+              "                  Dinner Services:"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              "Daily bookings Monday - Thursday from 5pm - 10pm",
+              (0, _hyperapp.h)("br", null),
+              "Friday - Sunday from 5pm - 11pm"
+            )
+          )
+        )
+      )
     )
   );
 }
