@@ -251,7 +251,7 @@ function Footer(_ref) {
         { className: "menu" },
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { className: "ourStory", href: "#" },
           "Our Story"
         ),
         (0, _hyperapp.h)(
@@ -274,6 +274,60 @@ function Footer(_ref) {
           { href: "#" },
           "Our Story"
         )
+      ),
+      (0, _hyperapp.h)(
+        "ul",
+        { className: "social-media" },
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "https://twitter.com/" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-twitter" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "https://www.facebook.com/" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-facebook-f" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "https://plus.google.com/" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-google-plus-g" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "https://www.instagram.com/" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-instagram" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "https://www.yelp.com/" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-yelp" })
+          )
+        )
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { className: "copyright" },
+        "\xA9 2018 Prime Beef Steak Restaurant"
       )
     )
   );
