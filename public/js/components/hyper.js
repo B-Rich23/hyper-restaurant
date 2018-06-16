@@ -104,8 +104,17 @@ function App(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var companyInfo = {
+  title: 'PRIME BEEF STEAK',
+  title2: 'RESTAURANT',
+  phone: '925-444-5555',
+  location: 'WALNUT CREEK, CA'
+
+};
+
 var globalState = exports.globalState = {
-  count: 0
+  count: 0,
+  companyInfo: companyInfo
 };
 
 /***/ }),
@@ -171,7 +180,8 @@ function ContactUs(_ref) {
                 { href: "mailTo:info@primebeefsteak.com" },
                 "info@primebeefsteak.com"
               )
-            )
+            ),
+            (0, _hyperapp.h)("div", { id: "map" })
           ),
           (0, _hyperapp.h)(
             "div",
@@ -754,9 +764,9 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h1",
           null,
-          "Prime Beef Steak ",
+          state.globalState.companyInfo.title,
           (0, _hyperapp.h)("br", null),
-          "Restaurant"
+          state.globalState.companyInfo.title2
         )
       ),
       (0, _hyperapp.h)(
@@ -770,7 +780,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h2",
           null,
-          "925-444-5555"
+          state.globalState.companyInfo.phone
         ),
         (0, _hyperapp.h)(
           "div",
