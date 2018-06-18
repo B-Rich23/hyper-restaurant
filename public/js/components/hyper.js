@@ -9,6 +9,44 @@ webpackJsonp([0],[
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var companyInfo = {
+  title: 'PRIME BEEF STEAK',
+  title2: 'RESTAURANT',
+  phone: '925-444-5555',
+  location: 'WALNUT CREEK, CA'
+
+};
+
+var menu = [{
+  title: 'BBQ Grilled Ribeye',
+  description: '16oz. Dry-Aged Prime Ribeye Steak, Baked Potato or Steak-Frites, Side of Vegetables',
+  price: '$35'
+}, {
+  title: 'Salmon Tartare',
+  description: 'Raw Salmon, Avocado, Olives, Tarragon, Lemon-Poppy Seed Dressing',
+  price: '$30'
+}, {
+  title: 'Cedar-Plank Grilled Lobster',
+  description: 'Grilled Maine Lobster, Garlic Butter Aoli, Crostini, Side Salad',
+  price: '$45'
+}];
+
+var globalState = exports.globalState = {
+  count: 0,
+  companyInfo: companyInfo,
+  menu: menu
+};
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var actions = exports.actions = {
   up: up,
   intro: intro,
@@ -27,7 +65,7 @@ function intro(state, actions) {
 }
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95,29 +133,6 @@ function App(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var companyInfo = {
-  title: 'PRIME BEEF STEAK',
-  title2: 'RESTAURANT',
-  phone: '925-444-5555',
-  location: 'WALNUT CREEK, CA'
-
-};
-
-var globalState = exports.globalState = {
-  count: 0,
-  companyInfo: companyInfo
-};
-
-/***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -131,94 +146,96 @@ exports.default = ContactUs;
 
 var _hyperapp = __webpack_require__(0);
 
+var _globalState = __webpack_require__(1);
+
 function ContactUs(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
   return (0, _hyperapp.h)(
-    "section",
-    { id: "ContactUs", className: "textureBG" },
+    'section',
+    { id: 'ContactUs', className: 'textureBG' },
     (0, _hyperapp.h)(
-      "div",
-      { className: "container" },
+      'div',
+      { className: 'container' },
       (0, _hyperapp.h)(
-        "div",
-        { className: "box" },
+        'div',
+        { className: 'box' },
         (0, _hyperapp.h)(
-          "h5",
-          { className: "comp-title" },
-          "Contact Us"
+          'h5',
+          { className: 'comp-title' },
+          'Contact Us'
         ),
         (0, _hyperapp.h)(
-          "div",
-          { className: "row" },
+          'div',
+          { className: 'row' },
           (0, _hyperapp.h)(
-            "div",
-            { className: "col-md-6" },
+            'div',
+            { className: 'col-md-6' },
             (0, _hyperapp.h)(
-              "div",
-              { className: "title" },
-              "Walnut Creek, CA"
+              'div',
+              { className: 'title' },
+              state.globalState.companyInfo.location
             ),
             (0, _hyperapp.h)(
-              "h6",
-              { className: "address" },
-              "12345 South Broadway",
-              (0, _hyperapp.h)("br", null),
-              "Walnut Creek, CA 94596"
+              'h6',
+              { className: 'address' },
+              '12345 South Broadway',
+              (0, _hyperapp.h)('br', null),
+              'Walnut Creek, CA 94596'
             ),
             (0, _hyperapp.h)(
-              "p",
+              'p',
               null,
               (0, _hyperapp.h)(
-                "strong",
+                'strong',
                 null,
-                "Email: "
+                'Email: '
               ),
               (0, _hyperapp.h)(
-                "a",
-                { href: "mailTo:info@primebeefsteak.com" },
-                "info@primebeefsteak.com"
+                'a',
+                { href: 'mailTo:info@primebeefsteak.com' },
+                'info@primebeefsteak.com'
               )
             ),
-            (0, _hyperapp.h)("div", { id: "map" })
+            (0, _hyperapp.h)('div', { id: 'map' })
           ),
           (0, _hyperapp.h)(
-            "div",
-            { className: "col-md-6" },
+            'div',
+            { className: 'col-md-6' },
             (0, _hyperapp.h)(
-              "h6",
-              { className: "address" },
-              "Phone:"
+              'h6',
+              { className: 'address' },
+              'Phone:'
             ),
             (0, _hyperapp.h)(
-              "div",
-              { className: "title" },
-              "925-444-5555"
+              'div',
+              { className: 'title' },
+              state.globalState.companyInfo.phone
             ),
             (0, _hyperapp.h)(
-              "h6",
-              { className: "mealTime" },
-              "                  Lunch Services:"
+              'h6',
+              { className: 'mealTime' },
+              '                  Lunch Services:'
             ),
             (0, _hyperapp.h)(
-              "p",
+              'p',
               null,
-              "Monday - Friday 12pm - 1:30pm",
-              (0, _hyperapp.h)("br", null),
-              "Saturday & Sunday from 11am - 1:30pm"
+              'Monday - Friday 12pm - 1:30pm',
+              (0, _hyperapp.h)('br', null),
+              'Saturday & Sunday from 11am - 1:30pm'
             ),
             (0, _hyperapp.h)(
-              "h6",
-              { className: "mealTime" },
-              "                  Dinner Services:"
+              'h6',
+              { className: 'mealTime' },
+              '                  Dinner Services:'
             ),
             (0, _hyperapp.h)(
-              "p",
+              'p',
               null,
-              "Daily bookings Monday - Thursday from 5pm - 10pm",
-              (0, _hyperapp.h)("br", null),
-              "Friday - Sunday from 5pm - 11pm"
+              'Daily bookings Monday - Thursday from 5pm - 10pm',
+              (0, _hyperapp.h)('br', null),
+              'Friday - Sunday from 5pm - 11pm'
             )
           )
         )
@@ -615,115 +632,69 @@ exports.default = SpecialMenu;
 
 var _hyperapp = __webpack_require__(0);
 
+var _globalState = __webpack_require__(1);
+
 function SpecialMenu(_ref) {
     var state = _ref.state,
         actions = _ref.actions;
 
-    return (0, _hyperapp.h)(
-        "section",
-        { id: "SpecialMenu", className: "textureBG" },
-        (0, _hyperapp.h)(
-            "div",
-            { className: "container" },
-            (0, _hyperapp.h)(
-                "h5",
-                { className: "comp-title" },
-                "Special Menu"
-            ),
-            (0, _hyperapp.h)(
-                "h2",
-                null,
-                "A Taste Of Autumn"
-            ),
-            (0, _hyperapp.h)(
-                "div",
-                { className: "row boxes" },
+    var loopMenu = function loopMenu() {
+        return state.globalState.menu.map(function (item) {
+            console.log(item.price);
+            return (0, _hyperapp.h)(
+                'div',
+                { className: 'col-md-4' },
                 (0, _hyperapp.h)(
-                    "div",
-                    { className: "col-md-4" },
+                    'div',
+                    { className: 'box' },
                     (0, _hyperapp.h)(
-                        "div",
-                        { className: "box" },
+                        'div',
+                        { className: 'box-img' },
                         (0, _hyperapp.h)(
-                            "div",
-                            { className: "box-img" },
-                            (0, _hyperapp.h)(
-                                "div",
-                                { className: "price-circle" },
-                                "$35"
-                            )
-                        ),
-                        (0, _hyperapp.h)(
-                            "span",
-                            { className: "box-title" },
-                            "BBQ Grilled Ribeye"
-                        ),
-                        (0, _hyperapp.h)(
-                            "p",
-                            { className: "box-details" },
-                            "16oz. Dry-Aged Prime Ribeye Steak, baked potato or steak-frites, side of vegetables"
+                            'div',
+                            { className: 'price-circle' },
+                            item.price
                         )
-                    )
-                ),
-                (0, _hyperapp.h)(
-                    "div",
-                    { className: "col-md-4" },
+                    ),
                     (0, _hyperapp.h)(
-                        "div",
-                        { className: "box" },
-                        (0, _hyperapp.h)(
-                            "div",
-                            { className: "box-img" },
-                            (0, _hyperapp.h)(
-                                "div",
-                                { className: "price-circle" },
-                                "$35"
-                            )
-                        ),
-                        (0, _hyperapp.h)(
-                            "span",
-                            { className: "box-title" },
-                            "BBQ Grilled Ribeye"
-                        ),
-                        (0, _hyperapp.h)(
-                            "p",
-                            { className: "box-details" },
-                            "16oz. Dry-Aged Prime Ribeye Steak, baked potato or steak-frites, side of vegetables"
-                        )
-                    )
-                ),
-                (0, _hyperapp.h)(
-                    "div",
-                    { className: "col-md-4" },
+                        'span',
+                        { className: 'box-title' },
+                        item.title
+                    ),
                     (0, _hyperapp.h)(
-                        "div",
-                        { className: "box" },
-                        (0, _hyperapp.h)(
-                            "div",
-                            { className: "box-img" },
-                            (0, _hyperapp.h)(
-                                "div",
-                                { className: "price-circle" },
-                                "$35"
-                            )
-                        ),
-                        (0, _hyperapp.h)(
-                            "span",
-                            { className: "box-title" },
-                            "BBQ Grilled Ribeye"
-                        ),
-                        (0, _hyperapp.h)(
-                            "p",
-                            { className: "box-details" },
-                            "16oz. Dry-Aged Prime Ribeye Steak, baked potato or steak-frites, side of vegetables"
-                        )
+                        'p',
+                        { className: 'box-details' },
+                        item.description
                     )
                 )
+            );
+        });
+    };
+    return (0, _hyperapp.h)(
+        'section',
+        { id: 'SpecialMenu', className: 'textureBG' },
+        (0, _hyperapp.h)(
+            'div',
+            { className: 'container' },
+            (0, _hyperapp.h)(
+                'h5',
+                { className: 'comp-title' },
+                'Special Menu'
             ),
             (0, _hyperapp.h)(
-                "a",
-                { className: "full-menu", href: "#" },
-                "View Full Menu"
+                'h2',
+                null,
+                'A Taste Of Autumn'
+            ),
+            (0, _hyperapp.h)(
+                'div',
+                { className: 'row boxes' },
+                loopMenu()
+            ),
+            (0, _hyperapp.h)(
+                'a',
+                { className: 'full-menu', href: '#' },
+                'View Full Menu'
             )
         )
     );
@@ -811,11 +782,11 @@ function TopImg(_ref) {
 
 var _hyperapp = __webpack_require__(0);
 
-var _actions = __webpack_require__(1);
+var _actions = __webpack_require__(2);
 
-var _globalState = __webpack_require__(3);
+var _globalState = __webpack_require__(1);
 
-var _App = __webpack_require__(2);
+var _App = __webpack_require__(3);
 
 var _App2 = _interopRequireDefault(_App);
 

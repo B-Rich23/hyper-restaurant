@@ -1,4 +1,5 @@
 import { h, app } from 'hyperapp'
+import { globalState } from '../state/globalState';
 
 export default function ContactUs({state, actions}) {
   return (
@@ -9,7 +10,7 @@ export default function ContactUs({state, actions}) {
           <div className="row">
             <div className="col-md-6">
               <div className="title">
-              Walnut Creek, CA
+              {state.globalState.companyInfo.location}
               </div>
               <h6 className="address">
               12345 South Broadway<br/>Walnut Creek, CA 94596
@@ -25,7 +26,7 @@ export default function ContactUs({state, actions}) {
                 Phone:
                 </h6>
                 <div className="title">
-                925-444-5555
+                {state.globalState.companyInfo.phone}
                 </div>
                 <h6 className="mealTime">                  Lunch Services:
                 </h6>
