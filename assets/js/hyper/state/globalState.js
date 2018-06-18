@@ -62,6 +62,21 @@ let reviews = [
   }
 ]
 
+let quotes = [
+{
+  author: 'Hedda Sterne',
+  quote: '"For me, cooking is an extension of love."'
+},
+{
+  author: 'David Chang',
+  quote: '"Food, to me, is always about cooking and eating with those you love and care for."'
+},
+{
+  author: 'Geoffrey Zakarian',
+  quote: '"I love hospitality, and I love cooking. The kitchen is where I feel most at ease and where I feel most like myself."'
+}
+]
+
 
 export const globalState = {
   count: 0,
