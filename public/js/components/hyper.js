@@ -44,22 +44,22 @@ var reviews = [{
   authorInfo: '- host of Top Cook',
   review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
 }, {
-  company: 'KITCHEN WARS',
+  company: 'BATTLE KITCHEN',
   highlight: 'Must stop steak shop!',
   author: 'Terry Sanders',
-  authorInfo: '- producer of Kitchen Wars',
+  authorInfo: '- producer of Battle Kitchen',
   review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
 }, {
-  company: 'THE FOODIE CHANNEL',
+  company: 'FOODIE CHANNEL',
   highlight: 'A steak experience par excellence!',
   author: 'Katrina Oliver',
-  authorInfo: '- executive chef on The Foodie Channel',
+  authorInfo: '- executive chef on Foodie Channel',
   review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
 }, {
-  company: 'CHEF GLADIATORS',
+  company: 'CHEF WARS',
   highlight: 'Your taste buds will thank me!',
   author: 'Hank Espinoza',
-  authorInfo: '- reigning gladiator on Chef Gladiators',
+  authorInfo: '- reigning gladiator on Chef Wars',
   review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
 }];
 
@@ -96,20 +96,30 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var actions = exports.actions = {
-  up: up,
-  intro: intro,
-  showMenu: showMenu
+  reviewRight: reviewRight,
+  reviewLeft: reviewLeft,
+  intro: intro
 };
 
-function up(state, actions) {
-  return { count: state.count + 1 };
+function reviewRight(state, actions) {
+  return state.globalState.reviewStatus.reviewCount === state.globalState.reviews.length - 1 ? state.globalState.reviewStatus.reviewCount = 4 : {
+    reviewStatus: {
+      reviewCount: state.globalState.reviewStatus.reviewCount++
+    }
+  };
 }
 
-function showMenu() {}
-
-function intro(state, actions) {
+function intro() {
   console.log('Just ran my first action');
-  return { count: state.count + 1 };
+}
+
+function reviewLeft(state, actions) {
+
+  return state.globalState.reviewStatus.reviewCount === 0 ? state.globalState.reviewStatus.reviewCount = 0 : {
+    reviewStatus: {
+      reviewCount: state.globalState.reviewStatus.reviewCount--
+    }
+  };
 }
 
 /***/ }),
@@ -686,8 +696,8 @@ function Reviews(_ref) {
           ),
           currentReview(),
           (0, _hyperapp.h)('div', { className: 'arrows' }),
-          (0, _hyperapp.h)('i', { className: 'fas fa-arrow-left ' + (state.globalState.reviewStatus.reviewCount > 0 ? 'ready' : '') }),
-          (0, _hyperapp.h)('i', { className: 'fas fa-arrow-right ' + (state.globalState.reviewStatus.reviewCount === state.globalState.reviews.length - 1 ? '' : 'ready') })
+          (0, _hyperapp.h)('i', { onclick: actions.reviewLeft, className: 'fas fa-arrow-left ' + (state.globalState.reviewStatus.reviewCount > 0 ? 'ready' : '') }),
+          (0, _hyperapp.h)('i', { onclick: actions.reviewRight, className: 'fas fa-arrow-right ' + (state.globalState.reviewStatus.reviewCount === state.globalState.reviews.length - 1 ? '' : 'ready') })
         )
       )
     )

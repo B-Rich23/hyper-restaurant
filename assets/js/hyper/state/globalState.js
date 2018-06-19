@@ -40,24 +40,24 @@ let reviews = [
     review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
   },
   {
-    company: 'KITCHEN WARS',
+    company: 'BATTLE KITCHEN',
     highlight: 'Must stop steak shop!',
     author: 'Terry Sanders',
-    authorInfo: '- producer of Kitchen Wars',
+    authorInfo: '- producer of Battle Kitchen',
     review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
   },
   {
-    company: 'THE FOODIE CHANNEL',
+    company: 'FOODIE CHANNEL',
     highlight: 'A steak experience par excellence!',
     author: 'Katrina Oliver',
-    authorInfo: '- executive chef on The Foodie Channel',
+    authorInfo: '- executive chef on Foodie Channel',
     review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
   },
   {
-    company: 'CHEF GLADIATORS',
+    company: 'CHEF WARS',
     highlight: 'Your taste buds will thank me!',
     author: 'Hank Espinoza',
-    authorInfo: '- reigning gladiator on Chef Gladiators',
+    authorInfo: '- reigning gladiator on Chef Wars',
     review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
   }
 ]

@@ -56,8 +56,8 @@ export default function Reviews({state, actions}) {
             </p>
             <div className="author"><strong>Rich Belini</strong> - winner of Chef Masters</div> */}
             <div className="arrows"></div>
-            <i className={`fas fa-arrow-left ${(state.globalState.reviewStatus.reviewCount > 0) ? 'ready' : ''}`}></i>
-            <i className={`fas fa-arrow-right ${(state.globalState.reviewStatus.reviewCount ===  (state.globalState.reviews.length - 1)) ? '' : 'ready'}`}></i>
+            <i onclick={actions.reviewLeft} className={`fas fa-arrow-left ${(state.globalState.reviewStatus.reviewCount > 0) ? 'ready' : ''}`}></i>
+            <i onclick={actions.reviewRight} className={`fas fa-arrow-right ${(state.globalState.reviewStatus.reviewCount ===  (state.globalState.reviews.length - 1)) ? '' : 'ready'}`}></i>
           </div>
         </div>
       </div>
