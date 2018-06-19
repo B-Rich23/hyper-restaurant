@@ -82,6 +82,10 @@ export const globalState = {
   count: 0,
   companyInfo,
   menu,
-  reviews
+  reviews,
+  quotes,
+  reviewStatus: {
+    reviewCount: 0
+  }
 }
 

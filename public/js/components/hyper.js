@@ -31,10 +31,58 @@ var menu = [{
   price: '$45'
 }];
 
+var reviews = [{
+  company: 'CHEF MASTERS',
+  highlight: 'A breathtaking steakhouse experience!',
+  author: 'Rich Belini',
+  authorInfo: '- winner of Chef Masters',
+  review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
+}, {
+  company: 'TOP COOK',
+  highlight: 'Delectable delights abound!',
+  author: 'Sasha Murphy',
+  authorInfo: '- host of Top Cook',
+  review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
+}, {
+  company: 'KITCHEN WARS',
+  highlight: 'Must stop steak shop!',
+  author: 'Terry Sanders',
+  authorInfo: '- producer of Kitchen Wars',
+  review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
+}, {
+  company: 'THE FOODIE CHANNEL',
+  highlight: 'A steak experience par excellence!',
+  author: 'Katrina Oliver',
+  authorInfo: '- executive chef on The Foodie Channel',
+  review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
+}, {
+  company: 'CHEF GLADIATORS',
+  highlight: 'Your taste buds will thank me!',
+  author: 'Hank Espinoza',
+  authorInfo: '- reigning gladiator on Chef Gladiators',
+  review: 'Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh.'
+}];
+
+var quotes = [{
+  author: 'Hedda Sterne',
+  quote: '"For me, cooking is an extension of love."'
+}, {
+  author: 'David Chang',
+  quote: '"Food, to me, is always about cooking and eating with those you love and care for."'
+}, {
+  author: 'Geoffrey Zakarian',
+  quote: '"I love hospitality, and I love cooking. The kitchen is where I feel most at ease and where I feel most like myself."'
+}];
+
 var globalState = exports.globalState = {
   count: 0,
   companyInfo: companyInfo,
-  menu: menu
+  menu: menu,
+  reviews: reviews,
+  quotes: quotes,
+  reviewStatus: {
+    reviewCount: 0
+  }
 };
 
 /***/ }),
@@ -554,64 +602,92 @@ exports.default = Reviews;
 
 var _hyperapp = __webpack_require__(0);
 
+var _globalState = __webpack_require__(1);
+
 function Reviews(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
-  return (0, _hyperapp.h)(
-    "section",
-    { id: "Reviews" },
-    (0, _hyperapp.h)(
-      "div",
-      { className: "container" },
+  // window.onload = () => {
+
+  var currentReview = function currentReview() {
+    return (0, _hyperapp.h)(
+      'div',
+      null,
       (0, _hyperapp.h)(
-        "div",
-        { className: "row" },
+        'h2',
+        null,
+        state.globalState.reviews[state.globalState.reviewStatus.reviewCount].company
+      ),
+      (0, _hyperapp.h)(
+        'h4',
+        null,
+        state.globalState.reviews[state.globalState.reviewStatus.reviewCount].highlight
+      ),
+      ' ',
+      (0, _hyperapp.h)(
+        'p',
+        null,
+        state.globalState.reviews[state.globalState.reviewStatus.reviewCount].review
+      ),
+      (0, _hyperapp.h)(
+        'div',
+        { className: 'author' },
         (0, _hyperapp.h)(
-          "div",
-          { className: "col-md-8" },
+          'strong',
+          null,
+          state.globalState.reviews[state.globalState.reviewStatus.reviewCount].author
+        ),
+        ' ',
+        state.globalState.reviews[state.globalState.reviewStatus.reviewCount].authorInfo
+      )
+    );
+  };
+  // }
+  // let loopReviews = () => {
+  //   return state.globalState.reviews.map((item) => {
+
+  //     return(
+  //         <h2>{item.company}</h2>
+  //         <h4>{item.highlight}</h4>
+  //         <p>{item.review}
+  //         </p>
+  //         <div className="author"><strong>{item.author}</strong> {item.authorInfo}</div>
+
+  //     )
+  //   })
+  // }
+
+  return (0, _hyperapp.h)(
+    'section',
+    { id: 'Reviews' },
+    (0, _hyperapp.h)(
+      'div',
+      { className: 'container' },
+      (0, _hyperapp.h)(
+        'div',
+        { className: 'row' },
+        (0, _hyperapp.h)(
+          'div',
+          { className: 'col-md-8' },
           (0, _hyperapp.h)(
-            "div",
-            { className: "chef-img" },
-            (0, _hyperapp.h)("img", { src: "../img/chef.jpg" })
+            'div',
+            { className: 'chef-img' },
+            (0, _hyperapp.h)('img', { src: '../img/chef.jpg' })
           )
         ),
         (0, _hyperapp.h)(
-          "div",
-          { className: "col-md-4" },
+          'div',
+          { className: 'col-md-4' },
           (0, _hyperapp.h)(
-            "h5",
-            { className: "comp-title" },
-            "Reviews"
+            'h5',
+            { className: 'comp-title' },
+            'Reviews'
           ),
-          (0, _hyperapp.h)(
-            "h2",
-            null,
-            "Chef Masters"
-          ),
-          (0, _hyperapp.h)(
-            "h4",
-            null,
-            "A breathtaking steakhouse experience!"
-          ),
-          (0, _hyperapp.h)(
-            "p",
-            null,
-            "Lorem ipsum dolor amet salvia keytar disrupt etsy cloud bread before they sold out kombucha unicorn chartreuse hexagon single-origin coffee paleo beard fixie taxidermy. Shoreditch affogato neutra brooklyn, food truck polaroid irony lomo narwhal. Marfa normcore 8-bit wayfarers kickstarter ethical XOXO tousled wolf keytar offal ugh."
-          ),
-          (0, _hyperapp.h)(
-            "div",
-            { className: "author" },
-            (0, _hyperapp.h)(
-              "strong",
-              null,
-              "Rich Belini"
-            ),
-            " - winner of Chef Masters"
-          ),
-          (0, _hyperapp.h)("div", { className: "arrows" }),
-          (0, _hyperapp.h)("i", { className: "fas fa-arrow-left" }),
-          (0, _hyperapp.h)("i", { className: "fas fa-arrow-right ready" })
+          currentReview(),
+          (0, _hyperapp.h)('div', { className: 'arrows' }),
+          (0, _hyperapp.h)('i', { className: 'fas fa-arrow-left ' + (state.globalState.reviewStatus.reviewCount > 0 ? 'ready' : '') }),
+          (0, _hyperapp.h)('i', { className: 'fas fa-arrow-right ' + (state.globalState.reviewStatus.reviewCount === state.globalState.reviews.length - 1 ? '' : 'ready') })
         )
       )
     )
