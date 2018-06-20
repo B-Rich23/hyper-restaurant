@@ -465,22 +465,22 @@ function Header(_ref) {
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#OurStory" },
           "Our Story"
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#SpecialMenu" },
           "Special Menu"
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#Reviews" },
           "Reviews"
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#ContactUs" },
           "Contact Us"
         ),
         (0, _hyperapp.h)(
@@ -782,85 +782,89 @@ function SpecialMenu(_ref) {
             ),
             (0, _hyperapp.h)(
                 'div',
-                { className: 'row boxes' },
+                { className: 'container' },
                 (0, _hyperapp.h)(
                     'div',
-                    { className: 'col-md-4' },
+                    { className: 'row boxes' },
                     (0, _hyperapp.h)(
                         'div',
-                        { className: 'box' },
+                        { className: 'col-md-4' },
                         (0, _hyperapp.h)(
                             'div',
-                            { id: 'box1', className: 'box-img' },
+                            { className: 'box' },
                             (0, _hyperapp.h)(
                                 'div',
-                                { className: 'price-circle' },
-                                menu[0].price
+                                { id: 'box1', className: 'box-img' },
+                                (0, _hyperapp.h)(
+                                    'div',
+                                    { className: 'price-circle' },
+                                    menu[0].price
+                                )
+                            ),
+                            (0, _hyperapp.h)(
+                                'span',
+                                { className: 'box-title' },
+                                menu[0].title
+                            ),
+                            (0, _hyperapp.h)(
+                                'p',
+                                { className: 'box-details' },
+                                menu[0].description
                             )
-                        ),
-                        (0, _hyperapp.h)(
-                            'span',
-                            { className: 'box-title' },
-                            menu[0].title
-                        ),
-                        (0, _hyperapp.h)(
-                            'p',
-                            { className: 'box-details' },
-                            menu[0].description
                         )
-                    )
-                ),
-                (0, _hyperapp.h)(
-                    'div',
-                    { className: 'col-md-4' },
+                    ),
                     (0, _hyperapp.h)(
                         'div',
-                        { className: 'box' },
+                        { className: 'col-md-4' },
                         (0, _hyperapp.h)(
                             'div',
-                            { id: 'box2', className: 'box-img' },
+                            { className: 'box' },
                             (0, _hyperapp.h)(
                                 'div',
-                                { className: 'price-circle' },
-                                menu[1].price
+                                { id: 'box2', className: 'box-img' },
+                                (0, _hyperapp.h)(
+                                    'div',
+                                    { className: 'price-circle' },
+                                    menu[1].price
+                                )
+                            ),
+                            (0, _hyperapp.h)(
+                                'span',
+                                { className: 'box-title' },
+                                menu[1].title
+                            ),
+                            (0, _hyperapp.h)(
+                                'p',
+                                { className: 'box-details' },
+                                menu[1].description
                             )
-                        ),
-                        (0, _hyperapp.h)(
-                            'span',
-                            { className: 'box-title' },
-                            menu[1].title
-                        ),
-                        (0, _hyperapp.h)(
-                            'p',
-                            { className: 'box-details' },
-                            menu[1].description
                         )
-                    )
-                ),
-                (0, _hyperapp.h)(
-                    'div',
-                    { className: 'col-md-4' },
+                    ),
                     (0, _hyperapp.h)(
                         'div',
-                        { className: 'box' },
+                        { className: 'col-md-4' },
                         (0, _hyperapp.h)(
                             'div',
-                            { id: 'box3', className: 'box-img' },
+                            { className: 'box' },
                             (0, _hyperapp.h)(
                                 'div',
-                                { className: 'price-circle' },
-                                menu[2].price
+                                { id: 'box3', className: 'box-img' },
+                                (0, _hyperapp.h)(
+                                    'div',
+                                    { className: 'price-circle' },
+                                    menu[2].price
+                                )
+                            ),
+                            (0, _hyperapp.h)(
+                                'span',
+                                { className: 'box-title' },
+                                menu[2].title
+                            ),
+                            (0, _hyperapp.h)(
+                                'p',
+                                { className: 'box-details' },
+                                menu[2].description
                             )
-                        ),
-                        (0, _hyperapp.h)(
-                            'span',
-                            { className: 'box-title' },
-                            menu[2].title
-                        ),
-                        (0, _hyperapp.h)(
-                            'p',
-                            { className: 'box-details' },
-                            menu[2].description
                         )
                     )
                 )
