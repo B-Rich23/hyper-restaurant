@@ -20,15 +20,18 @@ var companyInfo = {
 var menu = [{
   title: 'BBQ Grilled Ribeye',
   description: '16oz. Dry-Aged Prime Ribeye Steak, Baked Potato or Steak-Frites, Side of Vegetables',
-  price: '$35'
+  price: '$35',
+  image: "linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 300%),url(../img/steak-frites.jpg)"
 }, {
   title: 'Salmon Tartare',
   description: 'Raw Salmon, Avocado, Olives, Tarragon, Lemon-Poppy Seed Dressing',
-  price: '$30'
+  price: '$30',
+  image: "linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 300%),url(../img/salmon-tartare.jpg)"
 }, {
   title: 'Cedar-Plank Grilled Lobster',
   description: 'Grilled Maine Lobster, Garlic Butter Aoli, Crostini, Side Salad',
-  price: '$45'
+  price: '$45',
+  image: "linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 300%),url(../img/grilled-lobster.jpg)"
 }];
 
 var reviews = [{
@@ -95,32 +98,33 @@ var globalState = exports.globalState = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var actions = exports.actions = {
-  reviewRight: reviewRight,
-  reviewLeft: reviewLeft,
-  intro: intro
-};
 
-function reviewRight(state, actions) {
+var reviewRight = function reviewRight(state, actions) {
   return state.globalState.reviewStatus.reviewCount === state.globalState.reviews.length - 1 ? state.globalState.reviewStatus.reviewCount = 4 : {
     reviewStatus: {
       reviewCount: state.globalState.reviewStatus.reviewCount++
     }
   };
-}
+};
 
-function intro() {
+var intro = function intro() {
   console.log('Just ran my first action');
-}
+};
 
-function reviewLeft(state, actions) {
+var reviewLeft = function reviewLeft(state, actions) {
 
   return state.globalState.reviewStatus.reviewCount === 0 ? state.globalState.reviewStatus.reviewCount = 0 : {
     reviewStatus: {
       reviewCount: state.globalState.reviewStatus.reviewCount--
     }
   };
-}
+};
+
+var actions = exports.actions = {
+  reviewRight: reviewRight,
+  reviewLeft: reviewLeft,
+  intro: intro
+};
 
 /***/ }),
 /* 3 */
@@ -724,38 +728,42 @@ function SpecialMenu(_ref) {
     var state = _ref.state,
         actions = _ref.actions;
 
-    var loopMenu = function loopMenu() {
-        return state.globalState.menu.map(function (item) {
-            console.log(item.price);
-            return (0, _hyperapp.h)(
-                'div',
-                { className: 'col-md-4' },
-                (0, _hyperapp.h)(
-                    'div',
-                    { className: 'box' },
-                    (0, _hyperapp.h)(
-                        'div',
-                        { className: 'box-img' },
-                        (0, _hyperapp.h)(
-                            'div',
-                            { className: 'price-circle' },
-                            item.price
-                        )
-                    ),
-                    (0, _hyperapp.h)(
-                        'span',
-                        { className: 'box-title' },
-                        item.title
-                    ),
-                    (0, _hyperapp.h)(
-                        'p',
-                        { className: 'box-details' },
-                        item.description
-                    )
-                )
-            );
-        });
-    };
+    var menu = state.globalState.menu;
+    //   let menuImage = () => {
+    //     const boxImgs = document.querySelectorAll('.box-img');
+    //     boxImgs.forEach((img) => {
+    //         console.log(img);
+    //         return img.style.set('height', '400px')
+
+    //         // return img.set('background-image', item.image)
+    //     })
+
+    //   }
+    // const boxImg = document.querySelector('.box-img');
+
+    //   let loopMenu = () => {
+    //       return state.globalState.menu.map((item) => {
+    //           console.log(item.image);
+
+    // boxImg.set('height', '100px')
+
+    // return img.set('background-image', item.image)
+    //         return(
+    //         <div className="col-md-4">
+    //             <div className="box">
+    //                 <div className="box-img"style="background-image:url('http://www.example.com/img.png')">
+    //                     <div className="price-circle">{item.price}</div>
+    //                     </div>
+    //                     <span className="box-title">{item.title}</span>
+    //                     <p className="box-details">{item.description}</p>
+
+    //                 </div>
+    //             </div>
+
+    //         )
+    //     })
+
+    //   }
     return (0, _hyperapp.h)(
         'section',
         { id: 'SpecialMenu', className: 'textureBG' },
@@ -770,12 +778,92 @@ function SpecialMenu(_ref) {
             (0, _hyperapp.h)(
                 'h2',
                 null,
-                'A Taste Of Autumn'
+                'A Taste Of Summer'
             ),
             (0, _hyperapp.h)(
                 'div',
                 { className: 'row boxes' },
-                loopMenu()
+                (0, _hyperapp.h)(
+                    'div',
+                    { className: 'col-md-4' },
+                    (0, _hyperapp.h)(
+                        'div',
+                        { className: 'box' },
+                        (0, _hyperapp.h)(
+                            'div',
+                            { id: 'box1', className: 'box-img' },
+                            (0, _hyperapp.h)(
+                                'div',
+                                { className: 'price-circle' },
+                                menu[0].price
+                            )
+                        ),
+                        (0, _hyperapp.h)(
+                            'span',
+                            { className: 'box-title' },
+                            menu[0].title
+                        ),
+                        (0, _hyperapp.h)(
+                            'p',
+                            { className: 'box-details' },
+                            menu[0].description
+                        )
+                    )
+                ),
+                (0, _hyperapp.h)(
+                    'div',
+                    { className: 'col-md-4' },
+                    (0, _hyperapp.h)(
+                        'div',
+                        { className: 'box' },
+                        (0, _hyperapp.h)(
+                            'div',
+                            { id: 'box2', className: 'box-img' },
+                            (0, _hyperapp.h)(
+                                'div',
+                                { className: 'price-circle' },
+                                menu[1].price
+                            )
+                        ),
+                        (0, _hyperapp.h)(
+                            'span',
+                            { className: 'box-title' },
+                            menu[1].title
+                        ),
+                        (0, _hyperapp.h)(
+                            'p',
+                            { className: 'box-details' },
+                            menu[1].description
+                        )
+                    )
+                ),
+                (0, _hyperapp.h)(
+                    'div',
+                    { className: 'col-md-4' },
+                    (0, _hyperapp.h)(
+                        'div',
+                        { className: 'box' },
+                        (0, _hyperapp.h)(
+                            'div',
+                            { id: 'box3', className: 'box-img' },
+                            (0, _hyperapp.h)(
+                                'div',
+                                { className: 'price-circle' },
+                                menu[2].price
+                            )
+                        ),
+                        (0, _hyperapp.h)(
+                            'span',
+                            { className: 'box-title' },
+                            menu[2].title
+                        ),
+                        (0, _hyperapp.h)(
+                            'p',
+                            { className: 'box-details' },
+                            menu[2].description
+                        )
+                    )
+                )
             ),
             (0, _hyperapp.h)(
                 'a',

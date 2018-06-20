@@ -1,10 +1,5 @@
-export const actions = {
-  reviewRight,
-  reviewLeft,
-  intro
-}
 
-function reviewRight (state, actions) {
+const reviewRight = (state, actions) => {
   return (
     state.globalState.reviewStatus.reviewCount === (state.globalState.reviews.length - 1) ? state.globalState.reviewStatus.reviewCount = 4 :
     {
@@ -15,11 +10,11 @@ function reviewRight (state, actions) {
   )
 }
 
-function intro(){
+const intro = () => {
   console.log('Just ran my first action' );
 }
 
-function reviewLeft (state, actions){
+const reviewLeft = (state, actions) => {
 
   return (
     state.globalState.reviewStatus.reviewCount === 0 ? state.globalState.reviewStatus.reviewCount = 0 :
@@ -30,4 +25,10 @@ function reviewLeft (state, actions){
       }
     }
   )
+}
+
+export const actions = {
+  reviewRight,
+  reviewLeft,
+  intro
 }

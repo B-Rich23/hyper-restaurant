@@ -10,17 +10,20 @@ let menu = [
   {
     title: 'BBQ Grilled Ribeye',
     description:'16oz. Dry-Aged Prime Ribeye Steak, Baked Potato or Steak-Frites, Side of Vegetables',
-    price: '$35'
+    price: '$35',
+    image: "linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 300%),url(../img/steak-frites.jpg)"
   },
   {
     title: 'Salmon Tartare',
     description:'Raw Salmon, Avocado, Olives, Tarragon, Lemon-Poppy Seed Dressing',
-    price: '$30'
+    price: '$30',
+    image: "linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 300%),url(../img/salmon-tartare.jpg)"
   },
   {
     title: 'Cedar-Plank Grilled Lobster',
     description:'Grilled Maine Lobster, Garlic Butter Aoli, Crostini, Side Salad',
-    price: '$45'
+    price: '$45',
+    image: "linear-gradient(135deg,rgba(0,0,0,.0) 0,#000 300%),url(../img/grilled-lobster.jpg)"
   }
 ]
 
