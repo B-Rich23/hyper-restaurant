@@ -361,7 +361,7 @@ function Footer(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Our Story"
+          "Reservations"
         )
       ),
       (0, _hyperapp.h)(
@@ -444,49 +444,83 @@ function Header(_ref) {
     "header",
     null,
     (0, _hyperapp.h)(
-      "div",
-      { className: "container" },
+      "nav",
+      { "class": "navbar navbar-expand-lg navbar-dark bg-black" },
       (0, _hyperapp.h)(
-        "div",
-        { className: "logo" },
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#" },
-          (0, _hyperapp.h)("i", { "class": "fab fa-pinterest-p" })
-        )
+        "a",
+        { "class": "navbar-brand logo", href: "#TopImg" },
+        (0, _hyperapp.h)("i", { "class": "fab fa-pinterest-p" })
       ),
       (0, _hyperapp.h)(
-        "nav",
-        null,
+        "button",
+        { "class": "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarNav", "aria-controls": "navbarNav", "aria-expanded": "false", "aria-label": "Toggle navigation" },
+        (0, _hyperapp.h)("span", { "class": "navbar-toggler-icon" })
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "collapse navbar-collapse justify-content-end", id: "navbarNav" },
         (0, _hyperapp.h)(
-          "a",
-          { href: "#" },
-          "Menu"
-        ),
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#OurStory" },
-          "Our Story"
-        ),
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#SpecialMenu" },
-          "Special Menu"
-        ),
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#Reviews" },
-          "Reviews"
-        ),
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#ContactUs" },
-          "Contact Us"
-        ),
-        (0, _hyperapp.h)(
-          "a",
-          { href: "#" },
-          "Reservations"
+          "ul",
+          { "class": "navbar-nav" },
+          (0, _hyperapp.h)(
+            "li",
+            { "class": "nav-item" },
+            (0, _hyperapp.h)(
+              "a",
+              { id: "item1", "class": "nav-link", href: "#" },
+              "Menu ",
+              (0, _hyperapp.h)(
+                "span",
+                { "class": "sr-only" },
+                "(current)"
+              )
+            )
+          ),
+          (0, _hyperapp.h)(
+            "li",
+            { "class": "nav-item active" },
+            (0, _hyperapp.h)(
+              "a",
+              { id: "item1", "class": "nav-link", href: "#OurStory" },
+              "Our Story"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "li",
+            { "class": "nav-item active" },
+            (0, _hyperapp.h)(
+              "a",
+              { id: "item2", "class": "nav-link", href: "#SpecialMenu" },
+              "Special Menu"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "li",
+            { "class": "nav-item active" },
+            (0, _hyperapp.h)(
+              "a",
+              { id: "item3", "class": "nav-link", href: "#Reviews" },
+              "Reviews"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "li",
+            { "class": "nav-item active" },
+            (0, _hyperapp.h)(
+              "a",
+              { id: "item4", "class": "nav-link", href: "#ContactUs" },
+              "Contact Us"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "li",
+            { "class": "nav-item active" },
+            (0, _hyperapp.h)(
+              "a",
+              { id: "item5", "class": "nav-link", href: "#" },
+              "Reservations"
+            )
+          )
         )
       )
     )

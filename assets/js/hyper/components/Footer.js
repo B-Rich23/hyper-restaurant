@@ -10,7 +10,7 @@ export default function Footer({state, actions}) {
             <a href="#">Special Menu</a>
             <a href="#">Reviews</a>
             <a href="#">Contact Us</a>
-            <a href="#">Our Story</a>
+            <a href="#">Reservations</a>
         </nav>
         <ul className="social-media">
           <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
