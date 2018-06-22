@@ -952,41 +952,6 @@ function SpecialMenu(_ref) {
         actions = _ref.actions;
 
     var menu = state.globalState.menu;
-    //   let menuImage = () => {
-    //     const boxImgs = document.querySelectorAll('.box-img');
-    //     boxImgs.forEach((img) => {
-    //         console.log(img);
-    //         return img.style.set('height', '400px')
-
-    //         // return img.set('background-image', item.image)
-    //     })
-
-    //   }
-    // const boxImg = document.querySelector('.box-img');
-
-    //   let loopMenu = () => {
-    //       return state.globalState.menu.map((item) => {
-    //           console.log(item.image);
-
-    // boxImg.set('height', '100px')
-
-    // return img.set('background-image', item.image)
-    //         return(
-    //         <div className="col-md-4">
-    //             <div className="box">
-    //                 <div className="box-img"style="background-image:url('http://www.example.com/img.png')">
-    //                     <div className="price-circle">{item.price}</div>
-    //                     </div>
-    //                     <span className="box-title">{item.title}</span>
-    //                     <p className="box-details">{item.description}</p>
-
-    //                 </div>
-    //             </div>
-
-    //         )
-    //     })
-
-    //   }
     return (0, _hyperapp.h)(
         'section',
         { id: 'SpecialMenu', className: 'textureBG' },
@@ -1094,7 +1059,7 @@ function SpecialMenu(_ref) {
             ),
             (0, _hyperapp.h)(
                 'a',
-                { className: 'full-menu', href: '#' },
+                { className: 'full-menu', href: './docs/prime-steak-menu.pdf', target: '_blank' },
                 'View Full Menu'
             )
         )

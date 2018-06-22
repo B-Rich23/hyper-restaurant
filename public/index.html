@@ -11,51 +11,23 @@
   </head>
   <body>
     <div id="app"></div>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <script>
-      function myMap() {
-      var mapOptions = {
-          center: new google.maps.LatLng(51.5, -0.12),
-          zoom: 10,
-          mapTypeId: google.maps.MapTypeId.HYBRID
-      }
-      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-      }
-      </script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/js/components/vendor.js"></script>
     <script src="/js/components/hyper.js"></script>
     <script>
-    var scroll = new SmoothScroll('a[href*="#"]',  {
+      var scroll = new SmoothScroll('a[href*="#"]',  {
 
-// Selectors
-// ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-// header: null, // Selector for fixed headers (must be a valid CSS selector)
-topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+      // Selectors
+      topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
 
-// Speed & Easing
-speed: 3000, // Integer. How fast to complete the scroll in milliseconds
-clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
-// offset: function (anchor, toggle) {
+      // Speed & Easing
+      speed: 3000, // Integer. How fast to complete the scroll in milliseconds
+      clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
 
-//   // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-//   // This example is a function, but you could do something as simple as `offset: 25`
-
-//   // An example returning different values based on whether the clicked link was in the header nav or not
-//   if (toggle.classList.closest('.my-header-nav')) {
-//     return 25;
-//   } else {
-//     return 50;
-//   }
-
-});
+      });
     </script>
   </body>
 </html>

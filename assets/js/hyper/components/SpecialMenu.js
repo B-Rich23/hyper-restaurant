@@ -3,41 +3,6 @@ import { globalState } from '../state/globalState';
 
 export default function SpecialMenu({state, actions}) {
     const menu = state.globalState.menu;
-//   let menuImage = () => {
-//     const boxImgs = document.querySelectorAll('.box-img');
-//     boxImgs.forEach((img) => {
-//         console.log(img);
-//         return img.style.set('height', '400px')
-
-//         // return img.set('background-image', item.image)
-//     })
-
-//   }
-// const boxImg = document.querySelector('.box-img');
-
-//   let loopMenu = () => {
-//       return state.globalState.menu.map((item) => {
-//           console.log(item.image);
-
-        // boxImg.set('height', '100px')
-
-        // return img.set('background-image', item.image)
-//         return(
-//         <div className="col-md-4">
-//             <div className="box">
-//                 <div className="box-img"style="background-image:url('http://www.example.com/img.png')">
-//                     <div className="price-circle">{item.price}</div>
-//                     </div>
-//                     <span className="box-title">{item.title}</span>
-//                     <p className="box-details">{item.description}</p>
-
-//                 </div>
-//             </div>
-
-//         )
-//     })
-
-//   }
   return (
     <section id="SpecialMenu" className="textureBG">
       <div className="container">
@@ -45,8 +10,6 @@ export default function SpecialMenu({state, actions}) {
         <h2>A Taste Of Summer</h2>
         <div className="container">
             <div className="row boxes">
-                {/* {loopMenu()} */}
-                {/* {menuImage()} */}
                 <div className="col-md-4">
                     <div className="box">
                         <div id="box1" className="box-img">
@@ -76,7 +39,7 @@ export default function SpecialMenu({state, actions}) {
                 </div>
             </div>
         </div>
-        <a className="full-menu" href="#">View Full Menu</a>
+        <a className="full-menu" href="./docs/prime-steak-menu.pdf" target="_blank">View Full Menu</a>
       </div>
     </section>
   )
