@@ -34,7 +34,7 @@ export default function Header({state, actions}) {
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a id="item1" class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+        <a id="item1" class="nav-link" href="../docs/prime-steak-menu.pdf" target="_blank">Menu <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a id="item1" class="nav-link" href="#OurStory">Our Story</a>
@@ -49,7 +49,7 @@ export default function Header({state, actions}) {
         <a id="item4" class="nav-link" href="#ContactUs">Contact Us </a>
       </li>
       <li class="nav-item active">
-        <a id="item5" class="nav-link" href="#">Reservations</a>
+        <a id="item5" class="nav-link reserve-btn" data-toggle="modal" data-target="#exampleModal">Reservations</a>
       </li>
     </ul>
   </div>

@@ -353,22 +353,22 @@ function Footer(_ref) {
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#OurStory" },
           "Special Menu"
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#Reviews" },
           "Reviews"
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { href: "#ContactUs" },
           "Contact Us"
         ),
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
+          { "class": "reserve-btn", "data-toggle": "modal", "data-target": "#exampleModal" },
           "Reservations"
         )
       ),
@@ -475,7 +475,7 @@ function Header(_ref) {
             { "class": "nav-item" },
             (0, _hyperapp.h)(
               "a",
-              { id: "item1", "class": "nav-link", href: "#" },
+              { id: "item1", "class": "nav-link", href: "../docs/prime-steak-menu.pdf", target: "_blank" },
               "Menu ",
               (0, _hyperapp.h)(
                 "span",
@@ -525,7 +525,7 @@ function Header(_ref) {
             { "class": "nav-item active" },
             (0, _hyperapp.h)(
               "a",
-              { id: "item5", "class": "nav-link", href: "#" },
+              { id: "item5", "class": "nav-link reserve-btn", "data-toggle": "modal", "data-target": "#exampleModal" },
               "Reservations"
             )
           )

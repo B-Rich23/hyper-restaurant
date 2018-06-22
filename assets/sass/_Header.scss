@@ -40,9 +40,11 @@ header {
     font-size: 2rem;
       i {
         color: #fff;
+        transition: all 0.5s ease-in-out;
 
         &:hover {
           color: $red;
+          transform: scale(1.2);
         }
       }
 
@@ -56,6 +58,7 @@ header {
 
       &:hover {
         color: $red;
+        transform: scale(1.2);
       }
 
 

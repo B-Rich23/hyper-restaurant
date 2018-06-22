@@ -7,10 +7,10 @@ export default function Footer({state, actions}) {
         <div className="logo"><i class="fab fa-pinterest-p"></i></div>
         <nav className="menu">
             <a className="ourStory" href="#">Our Story</a>
-            <a href="#">Special Menu</a>
-            <a href="#">Reviews</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Reservations</a>
+            <a href="#OurStory">Special Menu</a>
+            <a href="#Reviews">Reviews</a>
+            <a href="#ContactUs">Contact Us</a>
+            <a class="reserve-btn" data-toggle="modal" data-target="#exampleModal">Reservations</a>
         </nav>
         <ul className="social-media">
           <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
