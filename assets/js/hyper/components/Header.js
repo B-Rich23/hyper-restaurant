@@ -46,7 +46,7 @@ export default function Header({state, actions}) {
         <a id="item3" class="nav-link" href="#Reviews">Reviews</a>
       </li>
       <li class="nav-item active">
-        <a id="item4" class="nav-link" href="#ContactUs">Contact Us</a>
+        <a id="item4" class="nav-link" href="#ContactUs">Contact Us </a>
       </li>
       <li class="nav-item active">
         <a id="item5" class="nav-link" href="#">Reservations</a>

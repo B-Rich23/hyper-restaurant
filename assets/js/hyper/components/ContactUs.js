@@ -18,7 +18,7 @@ export default function ContactUs({state, actions}) {
               <p>
               <strong>Email: </strong><a href="mailTo:info@primebeefsteak.com">info@primebeefsteak.com</a>
               </p>
-              <div id="map">
+              <div id="logo"><i class="fab fa-pinterest-p"></i>
               </div>
             </div>
             <div className="col-md-6">

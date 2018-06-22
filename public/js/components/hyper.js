@@ -260,7 +260,11 @@ function ContactUs(_ref) {
                 'info@primebeefsteak.com'
               )
             ),
-            (0, _hyperapp.h)('div', { id: 'map' })
+            (0, _hyperapp.h)(
+              'div',
+              { id: 'logo' },
+              (0, _hyperapp.h)('i', { 'class': 'fab fa-pinterest-p' })
+            )
           ),
           (0, _hyperapp.h)(
             'div',
@@ -509,7 +513,7 @@ function Header(_ref) {
             (0, _hyperapp.h)(
               "a",
               { id: "item4", "class": "nav-link", href: "#ContactUs" },
-              "Contact Us"
+              "Contact Us "
             )
           ),
           (0, _hyperapp.h)(
@@ -583,9 +587,190 @@ function OurStory(_ref) {
             )
           ),
           (0, _hyperapp.h)(
-            "a",
-            { href: "#", className: "reserve-btn" },
+            "button",
+            { type: "button", href: "#", className: "reserve-btn", "data-toggle": "modal", "data-target": "#exampleModal" },
             "Reserve"
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "modal fade", id: "exampleModal", tabindex: "-1", role: "dialog", "aria-labelledby": "exampleModalLabel", "aria-hidden": "true" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "modal-dialog", role: "document" },
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "modal-content" },
+                (0, _hyperapp.h)(
+                  "div",
+                  { "class": "modal-header" },
+                  (0, _hyperapp.h)(
+                    "h5",
+                    { "class": "modal-title justify-content-center", id: "exampleModalLabel" },
+                    "Reservation"
+                  ),
+                  (0, _hyperapp.h)(
+                    "button",
+                    { type: "button", "class": "close", "data-dismiss": "modal", "aria-label": "Close" },
+                    (0, _hyperapp.h)(
+                      "span",
+                      { "aria-hidden": "true" },
+                      "\xD7"
+                    )
+                  )
+                ),
+                (0, _hyperapp.h)(
+                  "div",
+                  { "class": "modal-body" },
+                  (0, _hyperapp.h)(
+                    "form",
+                    null,
+                    (0, _hyperapp.h)(
+                      "div",
+                      { "class": "form-row" },
+                      (0, _hyperapp.h)(
+                        "div",
+                        { "class": "col-md-4 mb-3" },
+                        (0, _hyperapp.h)(
+                          "label",
+                          { "for": "validationDefault01" },
+                          "First name"
+                        ),
+                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault01", placeholder: "First name", value: "John", required: true })
+                      ),
+                      (0, _hyperapp.h)(
+                        "div",
+                        { "class": "col-md-4 mb-3" },
+                        (0, _hyperapp.h)(
+                          "label",
+                          { "for": "validationDefault02" },
+                          "Last name"
+                        ),
+                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault02", placeholder: "Last name", value: "Smith", required: true })
+                      ),
+                      (0, _hyperapp.h)(
+                        "div",
+                        { "class": "col-md-4 mb-3" },
+                        (0, _hyperapp.h)(
+                          "div",
+                          { "class": "form-group" },
+                          (0, _hyperapp.h)(
+                            "label",
+                            { "for": "exampleFormControlSelect1" },
+                            "Party Size"
+                          ),
+                          (0, _hyperapp.h)(
+                            "select",
+                            { "class": "form-control", id: "exampleFormControlSelect1" },
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "1"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "2"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "3"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "4"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "5"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "6"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "7"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "8"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "9"
+                            ),
+                            (0, _hyperapp.h)(
+                              "option",
+                              null,
+                              "10"
+                            )
+                          )
+                        )
+                      )
+                    ),
+                    (0, _hyperapp.h)(
+                      "div",
+                      { "class": "form-row" },
+                      (0, _hyperapp.h)(
+                        "div",
+                        { "class": "col-md-6 mb-3" },
+                        (0, _hyperapp.h)(
+                          "label",
+                          { "for": "exampleInputEmail1" },
+                          "Email address"
+                        ),
+                        (0, _hyperapp.h)("input", { type: "email", "class": "form-control", id: "exampleInputEmail1", "aria-describedby": "emailHelp", placeholder: "Enter email" })
+                      ),
+                      (0, _hyperapp.h)(
+                        "div",
+                        { "class": "col-md-6 mb-3" },
+                        (0, _hyperapp.h)(
+                          "label",
+                          { "for": "validationDefault05" },
+                          "Phone"
+                        ),
+                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault05", placeholder: "Phone", required: true })
+                      )
+                    ),
+                    (0, _hyperapp.h)(
+                      "div",
+                      { "class": "form-group" },
+                      (0, _hyperapp.h)(
+                        "div",
+                        { "class": "form-check" },
+                        (0, _hyperapp.h)("input", { "class": "form-check-input", type: "checkbox", value: "", id: "invalidCheck2", required: true }),
+                        (0, _hyperapp.h)(
+                          "label",
+                          { "class": "form-check-label", "for": "invalidCheck2" },
+                          "Agree to terms and conditions"
+                        )
+                      )
+                    ),
+                    (0, _hyperapp.h)(
+                      "button",
+                      { "class": "btn btn-primary", type: "submit" },
+                      "Submit"
+                    )
+                  )
+                ),
+                (0, _hyperapp.h)(
+                  "div",
+                  { "class": "modal-footer" },
+                  (0, _hyperapp.h)(
+                    "button",
+                    { type: "button", "class": "btn btn-secondary", "data-dismiss": "modal" },
+                    "Close"
+                  )
+                )
+              )
+            )
           )
         ),
         (0, _hyperapp.h)(
