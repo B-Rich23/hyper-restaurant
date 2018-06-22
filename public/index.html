@@ -29,9 +29,33 @@
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/js/components/vendor.js"></script>
     <script src="/js/components/hyper.js"></script>
-    <script src="/js/navbar-fixed.js"></script>
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]',  {
+
+// Selectors
+// ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+// header: null, // Selector for fixed headers (must be a valid CSS selector)
+topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+
+// Speed & Easing
+speed: 3000, // Integer. How fast to complete the scroll in milliseconds
+clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+// offset: function (anchor, toggle) {
+
+//   // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+//   // This example is a function, but you could do something as simple as `offset: 25`
+
+//   // An example returning different values based on whether the clicked link was in the header nav or not
+//   if (toggle.classList.closest('.my-header-nav')) {
+//     return 25;
+//   } else {
+//     return 50;
+//   }
+
+});
+    </script>
   </body>
 </html>
