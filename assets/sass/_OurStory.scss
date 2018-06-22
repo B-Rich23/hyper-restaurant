@@ -10,6 +10,10 @@
         }
     }
 
+    button .active {
+
+    }
+
     .reserve-btn {
         font-family: $displayFont;
         display: inline-block;
@@ -22,7 +26,7 @@
         text-transform: uppercase;
         transition: all 0.5s ease-in-out;
         margin: 0.5rem 0 1.5rem;
-
+        outline: none;
 
         &:hover {
             background: $red;
@@ -39,11 +43,13 @@
     .reserve {
         background: $red;
         color: #fff;
+        outline: none;
     }
 
     .exit {
         background: $paragraphColor;
         color: #fff;
+        outline: none;
     }
     .video-img {
         background: black;

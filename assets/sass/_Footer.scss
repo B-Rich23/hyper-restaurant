@@ -26,6 +26,8 @@
 
           &:hover {
             color: $red;
+            // transform: scale(1.5);
+            // text-transform: uppercase;
           }
         }
 
@@ -45,9 +47,11 @@
 
         a {
             color: #fff;
+            transition: all 0.5s ease-in-out;
 
             &:hover {
                 color: $red;
+                // transform: scale(1.2);
             }
         }
 

@@ -639,7 +639,7 @@ function OurStory(_ref) {
                           { "for": "validationDefault01" },
                           "First name"
                         ),
-                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault01", placeholder: "First name", value: "John", required: true })
+                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault01", placeholder: "First name", required: true })
                       ),
                       (0, _hyperapp.h)(
                         "div",
@@ -649,7 +649,7 @@ function OurStory(_ref) {
                           { "for": "validationDefault02" },
                           "Last name"
                         ),
-                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault02", placeholder: "Last name", value: "Smith", required: true })
+                        (0, _hyperapp.h)("input", { type: "text", "class": "form-control", id: "validationDefault02", placeholder: "Last name", required: true })
                       ),
                       (0, _hyperapp.h)(
                         "div",
@@ -730,7 +730,7 @@ function OurStory(_ref) {
                           { "for": "exampleInputEmail1" },
                           "Email address"
                         ),
-                        (0, _hyperapp.h)("input", { type: "email", "class": "form-control", id: "exampleInputEmail1", "aria-describedby": "emailHelp", placeholder: "Enter email" })
+                        (0, _hyperapp.h)("input", { type: "email", "class": "form-control", id: "exampleInputEmail1", "aria-describedby": "emailHelp", placeholder: "Enter email", required: true })
                       ),
                       (0, _hyperapp.h)(
                         "div",
