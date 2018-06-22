@@ -29,6 +29,22 @@
             color: #fff;
         }
     }
+
+    .modal-title {
+        font-family: $textFont;
+        color: #000;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .reserve {
+        background: $red;
+        color: #fff;
+    }
+
+    .exit {
+        background: $paragraphColor;
+        color: #fff;
+    }
     .video-img {
         background: black;
         height: 500px;

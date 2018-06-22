@@ -7,6 +7,7 @@ import RandomQuotes from './RandomQuotes.js'
 import Reviews from './Reviews.js'
 import ContactUs from './ContactUs.js'
 import Footer from './Footer.js'
+import VanillaModal from 'vanilla-modal';
 
 export default function App({state, actions}) {
   return (

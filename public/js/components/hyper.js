@@ -172,6 +172,10 @@ var _Footer = __webpack_require__(5);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _vanillaModal = __webpack_require__(15);
+
+var _vanillaModal2 = _interopRequireDefault(_vanillaModal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App(_ref) {
@@ -605,7 +609,7 @@ function OurStory(_ref) {
                   { "class": "modal-header" },
                   (0, _hyperapp.h)(
                     "h5",
-                    { "class": "modal-title justify-content-center", id: "exampleModalLabel" },
+                    { "class": "modal-title text-center", id: "exampleModalLabel" },
                     "Reservation"
                   ),
                   (0, _hyperapp.h)(
@@ -755,7 +759,7 @@ function OurStory(_ref) {
                     ),
                     (0, _hyperapp.h)(
                       "button",
-                      { "class": "btn btn-primary", type: "submit" },
+                      { "class": "btn reserve", type: "submit" },
                       "Submit"
                     )
                   )
@@ -765,7 +769,7 @@ function OurStory(_ref) {
                   { "class": "modal-footer" },
                   (0, _hyperapp.h)(
                     "button",
-                    { type: "button", "class": "btn btn-secondary", "data-dismiss": "modal" },
+                    { type: "button", "class": "btn exit", "data-dismiss": "modal" },
                     "Close"
                   )
                 )
