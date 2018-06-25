@@ -795,9 +795,16 @@ exports.default = RandomQuotes;
 
 var _hyperapp = __webpack_require__(0);
 
+var _globalState = __webpack_require__(1);
+
 function RandomQuotes(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
+
+  var currentQuote = function currentQuote() {
+    return Math.floor(Math.random() * state.globalState.quotes.length);
+  };
+  var newQuote = currentQuote();
 
   return (0, _hyperapp.h)(
     'section',
@@ -808,12 +815,13 @@ function RandomQuotes(_ref) {
       (0, _hyperapp.h)(
         'h1',
         null,
-        '"For me, cooking is an extension of love."'
+        state.globalState.quotes[newQuote].quote
       ),
       (0, _hyperapp.h)(
         'span',
         { className: 'author' },
-        ' - Hedda Sterne'
+        ' - ',
+        state.globalState.quotes[newQuote].author
       )
     )
   );
@@ -838,8 +846,6 @@ var _globalState = __webpack_require__(1);
 function Reviews(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
-
-  // window.onload = () => {
 
   var currentReview = function currentReview() {
     return (0, _hyperapp.h)(
@@ -909,10 +915,10 @@ function Reviews(_ref) {
         ),
         (0, _hyperapp.h)(
           'div',
-          { className: 'col-md-4' },
+          { className: 'col-md-4 comp-title' },
           (0, _hyperapp.h)(
             'h5',
-            { className: 'comp-title' },
+            null,
             'Reviews'
           ),
           currentReview(),

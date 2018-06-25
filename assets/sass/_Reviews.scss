@@ -3,9 +3,9 @@
     margin: 50px 20px;
     .chef-img {
         img {
-            margin: 80px 15px;
-            max-width: 600px;
-            max-height: 400px;
+            margin: 80px 0;
+            max-width: 100%;
+            height: auto;
             -webkit-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
             -moz-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
             box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);

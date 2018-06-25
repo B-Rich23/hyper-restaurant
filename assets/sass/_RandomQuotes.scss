@@ -17,11 +17,11 @@
         color: #fff;
         font-family: $displayFont;
         font-size: 3rem;
-        display: inline-flex;
-        text-align: center;
-        // padding-bottom: 50px;
-        max-width: 600px;
+        display: inline-block;
+        text-align: left;
+        max-width: 90%;
         margin: 0 auto 50px;
+        margin-left: 10%;
         line-height: 1.2;
     }
 
