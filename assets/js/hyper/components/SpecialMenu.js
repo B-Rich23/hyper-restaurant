@@ -39,7 +39,7 @@ export default function SpecialMenu({state, actions}) {
                 </div>
             </div>
         </div>
-        <a className="full-menu" href="./docs/prime-steak-menu.pdf" target="_blank">View Full Menu</a>
+        <a className="full-menu" href="./pdfs/prime-steak-menu.pdf" target="_blank">View Full Menu</a>
       </div>
     </section>
   )

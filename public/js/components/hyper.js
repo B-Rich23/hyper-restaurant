@@ -172,10 +172,6 @@ var _Footer = __webpack_require__(5);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _vanillaModal = __webpack_require__(15);
-
-var _vanillaModal2 = _interopRequireDefault(_vanillaModal);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App(_ref) {
@@ -195,8 +191,6 @@ function App(_ref) {
     (0, _hyperapp.h)(_Footer2.default, { state: state, actions: actions })
   );
 }
-// <Header state={state} actions={actions}/>
-// <Button state={state} actions={actions}/>
 
 /***/ }),
 /* 4 */
@@ -475,7 +469,7 @@ function Header(_ref) {
             { "class": "nav-item" },
             (0, _hyperapp.h)(
               "a",
-              { id: "item1", "class": "nav-link", href: "../docs/prime-steak-menu.pdf", target: "_blank" },
+              { id: "item1", "class": "nav-link", href: "../pdfs/prime-steak-menu.pdf", target: "_blank" },
               "Menu ",
               (0, _hyperapp.h)(
                 "span",
@@ -1059,7 +1053,7 @@ function SpecialMenu(_ref) {
             ),
             (0, _hyperapp.h)(
                 'a',
-                { className: 'full-menu', href: './docs/prime-steak-menu.pdf', target: '_blank' },
+                { className: 'full-menu', href: './pdfs/prime-steak-menu.pdf', target: '_blank' },
                 'View Full Menu'
             )
         )
