@@ -4,7 +4,8 @@
     .chef-img {
         img {
             margin: 80px 0;
-            max-width: 100%;
+            width: 100%;
+            max-width: 600px;
             height: auto;
             -webkit-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
             -moz-box-shadow: 10px 10px 42px 1px rgba(0,0,0,0.93);
@@ -12,31 +13,37 @@
         }
     }
 
-    h4 {
-        font-weight: 600;
-        font-size: 1.3rem;
-        margin-bottom: 20px;
-    }
+    .comp-title {
+        margin: 0 auto;
 
-    .author {
-        color: $paragraphColor;
-        margin-bottom: 20px;
-
-        strong {
-            color: #000;
+        h4 {
             font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
         }
+
+        .author {
+            color: $paragraphColor;
+            margin-bottom: 20px;
+
+            strong {
+                color: #000;
+                font-weight: 600;
+            }
+        }
+
+        .fa-arrow-left, .fa-arrow-right {
+            font-size: 1.5rem;
+            padding: 20px 20px;
+            cursor: pointer;
+            color: $paragraphColor;
+        }
+
+        .fa-arrow-left.ready, .fa-arrow-right.ready {
+            color: #000;
+        }
+
     }
 
-    .fa-arrow-left, .fa-arrow-right {
-        font-size: 1.5rem;
-        padding: 20px 20px;
-        cursor: pointer;
-        color: $paragraphColor;
-    }
-
-    .fa-arrow-left.ready, .fa-arrow-right.ready {
-        color: #000;
-    }
 
 }
